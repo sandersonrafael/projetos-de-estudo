@@ -1,4 +1,4 @@
-class validaFormulario {
+class ValidaFormulario {
     constructor(nome, sobrenome, cpf, usuario, senha, confirmarSenha) {
         this.nome = nome.value
         this.sobrenome = sobrenome.value
@@ -86,7 +86,7 @@ document.querySelector('.button').onclick = () => {
         p[i] = document.querySelectorAll('p')[i+2]
     }
 
-    const formulario = new validaFormulario(...form)
+    const formulario = new ValidaFormulario(...form)
 
     let i = 0
     for (let chave in formulario) {
@@ -102,5 +102,5 @@ document.querySelector('.button').onclick = () => {
     p[5].innerHTML += `${formulario.validaConfirmarSenha()}`
 
     if (!(p[0].innerText || p[1].innerText || p[2].innerText || p[3].innerText || p[4].innerText || p[5].innerText))
-    setTimeout(() => alert('Formulário validado e usuário criado!'), 10)
+    setTimeout(() => alert('Formulário validado e usuário cadastrado!'), 10)
 }
