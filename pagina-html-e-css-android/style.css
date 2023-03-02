@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+                            /* Variáveis em CSS são na :root {} e começam com -- */
+:root {
+    --cor0: #ebe5c5;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+                    /*          Configurações Globais com o seletor * { }            */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after {              /* content é para adicionar o conteúdo do elemento, se for :after, é depois */
+    content: ' \1F5C1';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    color: white;
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
+
+}
+
+nav > a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    border-radius: 5px;
+    transition-duration: 0.7s;      /* TEMPO DE TRANSIÇÃO DO ESCURECIMENTO AO POUSAR O MOUSE */
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: 0 auto 30px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 10px 10px;
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+}
+
+main h2 {
+    color: var(--cor4);
+    font-family: var(--fonte-android);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 10px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.5em;               /* Espaçamento entre linhas */
+}
+
+main img {
+    width: 100%;
+}
+
+main strong {
+    color: var(--cor3);
+    font-weight: bold;
+
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor2);
+}
+
+main a:hover {
+    color: var(--cor3);
+    text-decoration: underline;
+    transition: 0.1s;
+}
+
+img#pequena {     /* Para centralizar a imagem, primeiro preciso tornar ela um BLOCO, pois é um inline-block  e depois margin auto */
+    max-width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+
+div.video {
+    margin: 0 -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left:  5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 7px;
+    margin: -10px -10px 0 -10px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+aside a {
+    color: var(--cor4)
+}
+
+aside ul {
+    list-style-type: '\2714\00a0';          /* \2714 é o checado no texto. \00a0 é o espaço em símbolos */
+    list-style-position: inside;            /* Onde começa a lista (a bolinha). Pode ser inside ou outsite */
+    columns: 2;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+
+}
+
+footer a {
+    color: rgb(52, 127, 240);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgb(134, 177, 243);
+}
