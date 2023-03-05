@@ -1,0 +1,55 @@
+* {
+    text-align: center;
+    font-size: 50px;
+}
+body {
+    background-color: #e9e9e9;
+}
+div {
+    width: 582px;
+    height: 582px;
+    background-color: #deb887;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px #c49557 solid;
+    margin: 30px auto
+}
+.preto {
+    background-color: rgba(0, 0, 0, 0.83);
+    height: 70px;
+    width: 70px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+.branco {
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.se {
+    border-radius: 10px 0 0 0;
+}
+.sd {
+    border-radius: 0 10px 0 0;
+}
+.ie {
+    border-radius: 0 0 0 10px;
+}
+.id {
+    border-radius: 0 0 10px 0;
+}
+table {
+    border: 2px #c49557 solid;
+    border-radius: 10px;
+    padding: 0;
+    margin: auto;
+
+}
+.testacolor {
+    background-color: rgba(255, 0, 0, 0.151);
+}
