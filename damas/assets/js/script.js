@@ -32,3 +32,5 @@ elementos.forEach((espaco) => {
     })
 })
 resetar()
+document.querySelector('#reiniciar').onclick = () => resetar()
+alert('Para mover, clique na peça e em seguida para onde deseja mover.\nPara eliminar, dê um duplo clique na peça que desejar.')
