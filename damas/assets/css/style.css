@@ -12,7 +12,7 @@ div {
     padding: 20px;
     border-radius: 10px;
     border: 2px #c49557 solid;
-    margin: 30px auto
+    margin: 30px auto;
 }
 .preto {
     background-color: rgba(0, 0, 0, 0.83);
@@ -50,6 +50,6 @@ table {
     margin: auto;
 
 }
-.testacolor {
-    background-color: rgba(255, 0, 0, 0.151);
+td.branco:hover {
+    cursor: pointer;
 }
